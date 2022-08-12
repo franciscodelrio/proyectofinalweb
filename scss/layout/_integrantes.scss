@@ -1,0 +1,48 @@
+.contIntegrantes {
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+}
+
+.primerIntegrante  {
+    width: 45rem;
+    padding-bottom: 5rem;
+}
+
+.segundoIntegrante {
+    width: 45rem;
+}
+
+.nombrePerfil {
+    color: $--blanco;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+	border-radius: 0.5rem;
+    background-color: $--destacado;
+    height: 3.5rem;
+    padding-top: 1rem;
+}
+
+.imgPerfil {
+    width: 45rem;
+}
+
+.infoPerfil {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+	line-height: 2rem;
+    font-size: 1.5rem;
+    color: $--blanco;
+}
+
+.footerInt {
+    margin-top: 5rem;
+}
