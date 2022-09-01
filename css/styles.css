@@ -32,15 +32,17 @@ div.containerInd {
 div.containerInt {
   display: grid;
   width: 100%;
-  grid-template-areas: "header" "main" "footer"; }
+  grid-template-areas: "header" "main" "footer";
+  min-height: 100vh; }
 
 /** PÁGINA DISCOGRAFIA */
 div.containerDisc {
   display: grid;
   width: 100%;
-  grid-template-areas: "header" "main" "footer"; }
+  grid-template-areas: "header" "main" "footer";
+  min-height: 100vh; }
 
-/** PÁGINA DISCOGRAFIA */
+/** PÁGINA GALERIA */
 div.containerGal {
   display: grid;
   width: 100%;
@@ -50,12 +52,13 @@ div.containerGal {
 div.containerCont {
   display: grid;
   width: 100%;
-  grid-template-areas: "header" "main" "footer"; }
+  grid-template-areas: "header" "main" "footer";
+  min-height: 100vh; }
 
 header.header {
   grid-area: header;
   width: 100%;
-  height: auto;
+  height: fit-content;
   background-color: #2B2B2B;
   border-bottom: solid 0.2rem #423F3E; }
 
@@ -80,7 +83,8 @@ header.header {
 
 /* * ----- ----- ----- VIDEO INTRO INDEX ----- ----- ----- */
 .video {
-  grid-area: video; }
+  grid-area: video;
+  margin-top: 3rem; }
 
 .videoRes {
   display: flex;
@@ -88,11 +92,12 @@ header.header {
   justify-content: center; }
 
 .videoRes iframe {
-  width: 400px;
-  height: 200px; }
+  width: 320px;
+  height: 180px; }
 
 .imgVideo {
-  grid-area: imgVideo; }
+  grid-area: imgVideo;
+  margin-top: 3rem; }
 
 .imgVideoRes {
   display: flex;
@@ -102,17 +107,16 @@ header.header {
   padding-bottom: 2rem; }
 
 .imgVideoRes img {
-  width: 35rem; }
+  width: 30rem; }
 
 .infoVideo {
-  grid-area: infoVideo; }
+  grid-area: infoVideo;
+  margin-bottom: 3rem; }
 
 .infoVideoRes {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   color: #ffffff; }
 
 .infoVideoRes h1, .infoVideoRes p {
@@ -121,7 +125,9 @@ header.header {
 
 .infoVideoRes p {
   font-weight: 300;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem; }
 
 /* * ----- ----- ----- MAIN CARDS INDEX ----- ----- ----- */
 .main {
@@ -136,14 +142,12 @@ header.header {
   padding-bottom: 3rem; }
 
 .card {
-  background-color: #010101;
+  background-color: #2B2B2B;
   color: #ffffff;
   padding: 2rem;
   border-radius: 0.5rem;
   width: fit-content;
-  margin-top: 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin: 2rem;
   transition: transform .2s; }
 
 .card:hover {
@@ -184,15 +188,32 @@ main .card .btn.primario:hover {
   align-items: center;
   align-content: space-around;
   justify-content: space-evenly;
-  flex-wrap: wrap;
-  padding-top: 5rem; }
+  flex-wrap: wrap; }
 
 .primerIntegrante {
-  width: 45rem;
-  padding-bottom: 5rem; }
+  width: 28rem;
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem; }
 
 .segundoIntegrante {
-  width: 45rem; }
+  width: 28rem;
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
+.tercerIntegrante {
+  width: 28rem;
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
+.cuartoIntegrante {
+  width: 28rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem; }
 
 .nombrePerfil {
   color: #ffffff;
@@ -207,7 +228,7 @@ main .card .btn.primario:hover {
   padding-top: 1rem; }
 
 .imgPerfil {
-  width: 45rem; }
+  width: 28rem; }
 
 .infoPerfil {
   padding-top: 2rem;
@@ -218,8 +239,8 @@ main .card .btn.primario:hover {
   font-size: 1.5rem;
   color: #ffffff; }
 
-.footerInt {
-  margin-top: 5rem; }
+.footer {
+  margin-top: auto; }
 
 .contDiscos {
   display: flex;
@@ -230,11 +251,11 @@ main .card .btn.primario:hover {
   padding-bottom: 3rem; }
 
 .cardDiscos {
-  background-color: #010101;
+  background-color: #2B2B2B;
   color: #ffffff;
   padding: 2rem;
   border-radius: 0.5rem;
-  width: fit-content;
+  width: 28rem;
   margin-top: 2rem;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -247,11 +268,12 @@ main .cardDiscos h3 {
   display: block;
   padding: 1rem 2rem;
   margin-bottom: 1rem;
-  width: 20rem;
+  width: 24rem;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
   text-align: center;
+  align-content: center;
   color: #ffffff;
   border-radius: 0.5rem;
   transition: .3s ease all; }
@@ -262,27 +284,27 @@ main .cardDiscos h3 {
 main .cardDiscos h3:hover {
   background: #423F3E; }
 
-.cardDiscos img {
-  width: 20rem;
-  margin-bottom: 1rem;
-  border-radius: 10rem; }
-
 .cardDiscos p {
   text-align: center;
-  width: 20rem;
+  width: fit-content;
   margin-bottom: 0.5rem;
   line-height: 2rem; }
 
 .galeria {
-  margin-top: 4rem;
-  margin-left: 7rem; }
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem; }
 
 .imgGaleria {
   width: 25rem;
   transition: transform .2s; }
 
 .imgGaleria:hover {
-  transform: scale(1.1); }
+  transform: scale(1.2); }
 
 main.mainContacto section form.formulario {
   background-color: #423F3E;
@@ -350,47 +372,90 @@ footer.footer {
   div.containerInd {
     grid-template-areas: "header header" "video video" "imgVideo infoVideo" "main main" "footer footer"; }
   .video {
-    padding-top: 5rem; }
+    margin-top: 5rem; }
   .videoRes iframe {
     width: 560px;
     height: 315px; }
-  .imgVideoRes {
-    padding-top: 2rem;
-    padding-bottom: 0; }
-  .infoVideoRes {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 0;
-    padding-bottom: 2rem; } }
+  .imgVideo {
+    margin-top: 5rem;
+    margin-left: 2rem; }
+  .infoVideo {
+    margin-top: 5rem; }
+  .infoVideoRes p {
+    margin-left: 3rem;
+    margin-right: 3rem; }
+  .contSecciones {
+    margin-top: 3rem; }
+  .card {
+    margin-bottom: 2rem; } }
 
 @media (min-width: 1200px) {
   div.containerInd {
-    grid-template-areas: "header header header" "video video imgVideo" "video video infoVideo" "main main main" "footer footer footer"; }
+    grid-template-areas: "header header header" "video video imgVideo" "video video infoVideo" "main main main" "footer footer footer";
+    min-height: 100vh; }
+  .video {
+    padding-left: 2rem; }
   .videoRes iframe {
     width: 640px;
-    height: 360px; } }
+    height: 360px; }
+  .imgVideo {
+    height: 17.6rem;
+    margin-left: 0; }
+  .imgVideoRes img {
+    padding-top: 7rem;
+    width: 45rem; }
+  .infoVideo {
+    margin-top: 0; }
+  .infoVideoRes {
+    margin-left: 5rem;
+    margin-right: 5rem; }
+  .contSecciones {
+    margin-top: 5rem; }
+  .footer {
+    margin-top: auto; } }
 
 /** PÁGINA INTEGRANTES */
 @media (min-width: 768px) {
   div.containerInt {
-    grid-template-areas: "header header" "main main" "main main" "footer footer"; }
-  .contIntegrantes {
-    display: flex;
-    align-items: center;
-    align-content: space-around;
-    justify-content: space-evenly;
-    flex-wrap: wrap; }
+    grid-template-areas: "header header" "main main" "main main" "footer footer";
+    min-height: 100vh; }
+  .footer {
+    margin-top: auto; }
   .primerIntegrante {
-    padding-bottom: 0; } }
+    width: 40rem; }
+  .segundoIntegrante {
+    width: 40rem; }
+  .tercerIntegrante {
+    width: 40rem; }
+  .cuartoIntegrante {
+    width: 40rem;
+    margin-bottom: 0; }
+  .imgPerfil {
+    width: 40rem; } }
 
 @media (min-width: 1200px) {
   div.containerInt {
-    grid-template-areas: "header header header" "main main main" "main main main" "footer footer footer"; } }
+    grid-template-areas: "header header header" "main main main" "main main main" "footer footer footer"; }
+  .primerIntegrante {
+    width: 50rem; }
+  .segundoIntegrante {
+    width: 50rem; }
+  .tercerIntegrante {
+    width: 50rem;
+    margin-bottom: 5rem; }
+  .cuartoIntegrante {
+    width: 50rem;
+    margin-bottom: 5rem; }
+  .imgPerfil {
+    width: 50rem; } }
 
 /** PÁGINA DISCOGRAFIA */
 @media (min-width: 768px) {
   div.containerDisc {
-    grid-template-areas: "header header" "main main" "main main" "footer footer"; } }
+    grid-template-areas: "header header" "main main" "main main" "footer footer";
+    min-height: 100vh; }
+  .footer {
+    margin-top: auto; } }
 
 @media (min-width: 1200px) {
   div.containerDisc {
@@ -399,7 +464,10 @@ footer.footer {
 /** PÁGINA GALERIA */
 @media (min-width: 768px) {
   div.containerGal {
-    grid-template-areas: "header header" "main main" "main main" "main main" "footer footer"; } }
+    grid-template-areas: "header header" "main main" "main main" "main main" "footer footer";
+    min-height: 100vh; }
+  .footer {
+    margin-top: auto; } }
 
 @media (min-width: 1200px) {
   div.containerGal {

@@ -40,6 +40,7 @@ div.containerInt {
     "main"
     "footer"
     ;
+    min-height: 100vh;
 }
 
 /** PÁGINA DISCOGRAFIA */
@@ -52,9 +53,10 @@ div.containerDisc {
     "main"
     "footer"
     ;
+    min-height: 100vh;
 }
 
-/** PÁGINA DISCOGRAFIA */
+/** PÁGINA GALERIA */
 
 div.containerGal {
     display: grid;
@@ -76,5 +78,6 @@ div.containerCont {
     "main"
     "footer"
     ;
+    min-height: 100vh;
 }
 

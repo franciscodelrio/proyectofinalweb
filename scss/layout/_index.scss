@@ -3,6 +3,7 @@
 
 .video {
     grid-area: video;
+    margin-top: 3rem;
 }
 
 .videoRes {
@@ -12,12 +13,13 @@
 }
 
 .videoRes iframe {
-    width: 400px;
-    height: 200px;
+    width: 320px;
+    height: 180px;
 }
 
 .imgVideo {
     grid-area: imgVideo;
+    margin-top: 3rem;
 }
 
 .imgVideoRes {
@@ -28,18 +30,18 @@
 }
 
 .imgVideoRes img {
-    width: 35rem;
+    width: 30rem;
 }
 
 .infoVideo {
     grid-area: infoVideo;
+    margin-bottom: 3rem;
 }
 
 .infoVideoRes {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    @include updown (2rem, 2rem);
     color: $--blanco;
 }
 
@@ -51,6 +53,8 @@
 .infoVideoRes p {
     font-weight: 300;
     font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 
@@ -70,14 +74,12 @@
 }
 
 .card {
-	background-color: $--primario /80%;
+	background-color: $--primario;
 	color: $--blanco;
 	padding: 2rem;
 	border-radius: 0.5rem;
     width: fit-content;
-    margin-top: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 2rem;
     transition: transform .2s;
 }
 

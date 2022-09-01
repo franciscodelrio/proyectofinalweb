@@ -12,7 +12,7 @@
     }
 
     .video {
-        padding-top: 5rem;
+        margin-top: 5rem;
     }
 
     .videoRes iframe {
@@ -20,17 +20,28 @@
         height: 315px;
     }
 
-    .imgVideoRes {
-        padding-top: 2rem;
-        padding-bottom: 0;
+    .imgVideo {
+        margin-top: 5rem;
+        margin-left: 2rem;
     }
 
-    .infoVideoRes {
-        flex-direction: column;
-        align-items: center;
-        padding-top: 0;
-        padding-bottom: 2rem;
+    .infoVideo {
+        margin-top: 5rem;
     }
+
+    .infoVideoRes p {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .contSecciones {
+        margin-top: 3rem;
+    }
+
+    .card {
+        margin-bottom: 2rem;
+    }
+
 }
 
 @media(min-width:1200px) {
@@ -42,12 +53,45 @@
         "main main main"
         "footer footer footer"
         ;
+        min-height: 100vh;
+    }
+
+    .video {
+        padding-left: 2rem;
     }
 
     .videoRes iframe {
         width: 640px;
         height: 360px;
     }
+
+    .imgVideo {
+        height: 17.6rem;
+        margin-left: 0;
+    }
+
+    .imgVideoRes img {
+        padding-top: 7rem;
+        width: 45rem;
+    }
+
+    .infoVideo {
+        margin-top: 0;
+    }
+
+    .infoVideoRes {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .contSecciones {
+        margin-top: 5rem;
+    }
+
+    .footer {
+        margin-top: auto;
+    }
+    
 
 }
 
@@ -61,18 +105,31 @@
         "main main"
         "footer footer"
         ;
+        min-height: 100vh;
     }
-
-    .contIntegrantes {
-        display: flex;
-        align-items: center;
-        align-content: space-around;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+    .footer {
+        margin-top: auto;
     }
 
     .primerIntegrante  {
-        padding-bottom: 0;
+        width: 40rem;
+    }
+
+    .segundoIntegrante {
+        width: 40rem;
+    }
+
+    .tercerIntegrante {
+        width: 40rem;
+    }
+
+    .cuartoIntegrante {
+        width: 40rem;
+        margin-bottom: 0;
+    }
+
+    .imgPerfil {
+        width: 40rem;
     }
     
 }
@@ -86,6 +143,28 @@
         "footer footer footer"
         ;
     }
+
+    .primerIntegrante  {
+        width: 50rem;
+    }
+
+    .segundoIntegrante {
+        width: 50rem;
+    }
+
+    .tercerIntegrante {
+        width: 50rem;
+        margin-bottom: 5rem;
+    }
+
+    .cuartoIntegrante {
+        width: 50rem;
+        margin-bottom: 5rem;
+    }
+
+    .imgPerfil {
+        width: 50rem;
+    }
 }
 
 /** PÁGINA DISCOGRAFIA */
@@ -98,6 +177,10 @@
         "main main"
         "footer footer"
         ;
+        min-height: 100vh;
+    }
+    .footer {
+        margin-top: auto;
     }
 }
 
@@ -122,6 +205,10 @@
         "main main"
         "footer footer"
         ;
+        min-height: 100vh;
+    }
+    .footer {
+        margin-top: auto;
     }
 }
 

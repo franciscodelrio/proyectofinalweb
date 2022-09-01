@@ -1,7 +1,7 @@
 header.header {
         grid-area: header;
         width: 100%;
-        height: auto;
+        height: fit-content;
         background-color: $--primario;
         border-bottom: solid 0.2rem $--secundario;
 }
